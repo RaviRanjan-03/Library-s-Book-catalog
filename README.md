@@ -39,15 +39,15 @@ API Endpoints (Test with Postman)
      POST /api/books
      
        Body:
-           {
      
+           {
             "title": "Effective Java",
             "author": "Joshua Bloch",
             "isbn": "9780134685991",
             "available": true
-     
           }
      Response:
+     
            {
             "id": 1,
             "title": "Effective Java",
@@ -59,6 +59,7 @@ API Endpoints (Test with Postman)
 3. Get All Books:
    GET /api/books
      Response:
+   
          [
             {
               "id": 1,
@@ -69,9 +70,10 @@ API Endpoints (Test with Postman)
             }
         ]
 
-4. Get Book by ID
+5. Get Book by ID
    GET /api/books/1
     Response:
+   
        {
         "id": 1,
         "title": "Effective Java",
@@ -80,14 +82,15 @@ API Endpoints (Test with Postman)
         "available": true
       }
 
-5. Delete a Book
+7. Delete a Book
    DELETE /api/books/1
       Response:
          Book deleted
 
-6. Update Book Availability
+8. Update Book Availability
    PATCH /api/books/1/availability?available=false
         Response:
+   
            {
               "id": 1,
               "title": "Effective Java",
