@@ -36,6 +36,7 @@ It supports operations like adding, listing, deleting, and updating book availab
 
 API Endpoints (Test with Postman)
   1. Add a New Book:
+     
      POST /api/books
      
        Body:
@@ -57,6 +58,7 @@ API Endpoints (Test with Postman)
            }
 
 3. Get All Books:
+   
    GET /api/books
      Response:
    
@@ -70,7 +72,8 @@ API Endpoints (Test with Postman)
             }
         ]
 
-5. Get Book by ID
+5. Get Book by ID:
+   
    GET /api/books/1
     Response:
    
@@ -82,13 +85,15 @@ API Endpoints (Test with Postman)
         "available": true
        }
 
-7. Delete a Book
+7. Delete a Book:
+   
    DELETE /api/books/1
       Response:
    
          Book deleted
 
-9. Update Book Availability
+9. Update Book Availability:
+    
    PUT /api/books/1/availability?available=false
         Response:
    
