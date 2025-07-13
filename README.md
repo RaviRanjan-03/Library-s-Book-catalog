@@ -12,8 +12,8 @@ It supports operations like adding, listing, deleting, and updating book availab
 
   ###  Configure MySQL Database
   1. Open MySQL and create a database:
-    '''sql
-     CREATE DATABASE library_db;
+   ```sql
+   CREATE DATABASE library_db;
 
 
 2.Update your application.properties (or application.yml) in src/main/resources:
