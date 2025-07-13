@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "55672669-6197-447e-8391-eb7ef792d08b",
+		"name": "library'book-Catalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40341497",
+		"_collection_link": "https://www.postman.com/bizdigitalit-assesment/workspace/ravi/collection/40341497-55672669-6197-447e-8391-eb7ef792d08b?action=share&source=collection_link&creator=40341497"
+	},
+	"item": [
+		{
+			"name": "Add-book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Java\",\r\n  \"author\": \"Goslin\",\r\n  \"isbn\": \"3254698\",\r\n  \"available\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Mathematics\",\r\n  \"author\": \"Yt\",\r\n  \"isbn\": \"20140365\",\r\n  \"available\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/4/availability?available=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"4",
+						"availability"
+					],
+					"query": [
+						{
+							"key": "available",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Java\",\r\n  \"author\": \"Goslin\",\r\n  \"isbn\": \"3254698\",\r\n  \"available\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Java\",\r\n  \"author\": \"Goslin\",\r\n  \"isbn\": \"3254698\",\r\n  \"available\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All-books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Java\",\r\n  \"author\": \"Goslin\",\r\n  \"isbn\": \"3254698\",\r\n  \"available\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
