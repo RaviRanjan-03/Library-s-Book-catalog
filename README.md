@@ -45,7 +45,7 @@ API Endpoints (Test with Postman)
             "author": "Joshua Bloch",
             "isbn": "9780134685991",
             "available": true
-          }
+           }
      Response:
      
            {
@@ -54,7 +54,7 @@ API Endpoints (Test with Postman)
             "author": "Joshua Bloch",
             "isbn": "9780134685991",
             "available": true
-          }
+           }
 
 3. Get All Books:
    GET /api/books
@@ -80,15 +80,16 @@ API Endpoints (Test with Postman)
         "author": "Joshua Bloch",
         "isbn": "9780134685991",
         "available": true
-      }
+       }
 
 7. Delete a Book
    DELETE /api/books/1
       Response:
+   
          Book deleted
 
-8. Update Book Availability
-   PATCH /api/books/1/availability?available=false
+9. Update Book Availability
+   PUT /api/books/1/availability?available=false
         Response:
    
            {
@@ -97,7 +98,7 @@ API Endpoints (Test with Postman)
               "author": "Joshua Bloch",
               "isbn": "9780134685991",
               "available": false
-         }
+           }
 
 Tools Used:
  - Java 8+
