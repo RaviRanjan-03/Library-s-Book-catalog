@@ -100,3 +100,9 @@ Tools Used:
  - MySQL 8
  - IntelliJ IDEA
  - Postman (for API testing)
+
+Features:
+ -REST-style CRUD operations
+ -Persistent storage with MySQL
+ -Input validation (title cannot be empty)
+ - Modular and testable service architecture
