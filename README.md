@@ -16,25 +16,27 @@ It supports operations like adding, listing, deleting, and updating book availab
      CREATE DATABASE library_db;
 
 
-2.Update your application.properties (or application.yml) in src/main/resources:
-  spring.datasource.url=jdbc:mysql://localhost:3306/library_db
-  spring.datasource.username=your_mysql_username
-  spring.datasource.password=your_mysql_password
-  
-  spring.jpa.hibernate.ddl-auto=update
-  spring.jpa.show-sql=true
-  spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+ 2.Update your application.properties (or application.yml) in src/main/resources:
+
+      spring.datasource.url=jdbc:mysql://localhost:3306/library_db
+      spring.datasource.username=your_mysql_username
+      spring.datasource.password=your_mysql_password
+    
+      spring.jpa.hibernate.ddl-auto=update
+      spring.jpa.show-sql=true
+      spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 
-▶️Run the App in IntelliJ
- i Open IntelliJ and load the project.
- ii Wait for Maven dependencies to load (check bottom bar).
- iii Open LibraryApplication.java.
- iv Right-click the file and select Run 'LibraryApplication'.
- v The app should start at:
-   - http://localhost:8080
+### ▶️Run the App in IntelliJ
+     i Open IntelliJ and load the project.
+     ii Wait for Maven dependencies to load (check bottom bar).
+     iii Open LibraryApplication.java.
+     iv Right-click the file and select Run 'LibraryApplication'.
+     v The app should start at:
+       - http://localhost:8080
 
-API Endpoints (Test with Postman)
+### API Endpoints (Test with Postman)
   1. Add a New Book:
      
      POST /api/books
@@ -60,6 +62,7 @@ API Endpoints (Test with Postman)
 3. Get All Books:
    
    GET /api/books
+   
      Response:
    
          [
@@ -75,6 +78,7 @@ API Endpoints (Test with Postman)
 5. Get Book by ID:
    
    GET /api/books/1
+   
     Response:
    
        {
@@ -88,6 +92,7 @@ API Endpoints (Test with Postman)
 7. Delete a Book:
    
    DELETE /api/books/1
+   
       Response:
    
          Book deleted
@@ -95,6 +100,7 @@ API Endpoints (Test with Postman)
 9. Update Book Availability:
     
    PUT /api/books/1/availability?available=false
+   
         Response:
    
            {
